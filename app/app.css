@@ -1,0 +1,43 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+#shell-panel {
+    height: 200px;
+    width: 100%;
+    background-color: #002f05;
+    color: #00fe00;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Source Code Pro';
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px dashed #E6EBE0;
+}
