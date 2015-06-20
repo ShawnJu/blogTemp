@@ -167,8 +167,8 @@ a:focus {
     font-size: 40px;
 }
 sup {
-    font-size: 23.6%
-    font-family: "Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif
+    font-size: small;
+    font-family: "Microsoft YaHei", Î¢ÈíÑÅºÚ,"Noto Sans CJK SC", "Source Han Sans CN", "Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .intro .intro-body .intro-text {

@@ -1,23 +1,13 @@
-'use strict';
+/**
+ * Created by Ju on 6/20/2015.
+ */
 
-// Declare app level module which depends on views, and components
-var myBlog = angular.module('myBlog', [
-  'ngRoute',
-  'myBlogControllers'
-]);
-
-myBlog.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-        when('/', {
-          templateUrl: 'main/main.html',
-          controller: 'mainCtrl'
-        }).
-        when('/blog', {
-          templateUrl: 'blog/blog.html',
-          controller: 'blogCtrl'
-        }).
-        otherwise({
-          redirectTo: '/'
-        });
-  }]);
+var express = require('express'),
+    routes = require('./routes');
+console.log("here we go");
+var app = express();
+app.use(express.static(__dirname + '/app'));    // 设置静态文件目录路径
+// 把app传入routes中，在routes/index.js中处理路由请求
+routes(app);
+// 启动服务
+app.listen(3000);
