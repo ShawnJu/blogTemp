@@ -17,6 +17,14 @@ myBlog.config(['$routeProvider',
           templateUrl: 'blog/blog.html',
           controller: 'blogCtrl'
         }).
+        when('/blog/:_id', {
+            templateUrl: 'post/post.html',
+            controller: 'postCtrl'
+        }).
+        when('/add', {
+            templateUrl: 'add/add.html',
+            controller: 'addCtrl'
+        }).
         otherwise({
           redirectTo: '/'
         });

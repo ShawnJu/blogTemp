@@ -745,3 +745,48 @@ form .row:first-child .floating-label-form-group {
     background-color: #404040;
     cursor: not-allowed
 }
+
+
+
+
+
+/*shit*/
+input, textarea {
+    border:1px solid #eee;
+    transition:0.3s;
+    color: black;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 3px #0085FF;
+    border-color:#0085FF;
+}
+
+#logo a:link, #logo a:visited {
+    color: #4f4f4f;
+}
+
+.btn a {
+    color: #fff;
+}
+
+#post {
+    width: 500px;
+    margin:0 auto;
+}
+
+#post [placeholder] {
+    width: 480px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    padding: 8px 10px;
+}
+
+#post [placeholder]:focus {
+    box-shadow: 0 0 3px #0085FF;
+    border-color:#0085FF;
+}
+
+#post textarea {
+    min-height: 70px;
+}
