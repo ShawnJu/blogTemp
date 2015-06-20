@@ -7,7 +7,7 @@ projects.
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development and testing tools for instant web development gratification.
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+The seed app doesn't do much, just shows how to wire two controllers.js and views together.
 
 
 ## Getting Started

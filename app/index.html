@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="myBlog" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myBlog" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myBlog" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myBlog" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,33 +17,12 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pygment_trac.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-
-
-
-
-
-
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
-    <script>Josh = {Debug: true };</script>
-    <script src="js/respond.js"></script>
-    <script src="js/history.js"></script>
-    <script src="js/killring.js"></script>
-    <script src="js/readline.js"></script>
-    <script src="js/input.js"></script>
-    <script src="js/shell.js"></script>
-    <script src="js/pathhandler.js"></script>
-    <script src="js/example.js"></script>
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -81,14 +60,13 @@
                   <li>
                       <a class="page-scroll" href="#about">About</a>
                   </li>
-                  <li>
-                      <a class="page-scroll" href="#download">Download</a>
-                  </li>
+
                   <li>
                       <a href="#/blog">BlOG</a>
                   </li>
-                  <li><a href="#/main">MAIN</a></li>
-
+                  <li>
+                      <a class="page-scroll" href="#info">INFO</a>
+                  </li>
                   <li>
                       <a class="page-scroll" href="#contact">Contact</a>
                   </li>
@@ -124,15 +102,6 @@
 
   <div ng-view></div>
 
-  <div id="shell-panel" class="container" tabindex="0">
-      <div>Type <code>help</code> or hit <code>TAB</code> for a list of commands.
-      </div>
-      <div id="shell-view"></div>
-  </div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
-
   <!-- Footer -->
   <footer>
       <div class="container text-center">
@@ -154,9 +123,8 @@
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="main/main.js"></script>
-  <script src="blog/blog.js"></script>
+  <script src="../app.js"></script>
+  <script src="js/controllers.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
